@@ -6,8 +6,8 @@ const Blogs = () => {
       <h2 className="font-[900] text-[#EB0000] text-center text-[40px] leading-[1.05] ">
         our latest blogs
       </h2>
-      <div className="flex gap-4 h-full w-full mt-8">
-        <div className="w-[70%] h-full bg-gray-800 rounded-[12px] flex items-end">
+      <div className="flex flex-col lg:flex-row gap-4 h-full w-full mt-8">
+        <div className="lg:w-[70%] w-full h-full bg-gray-800 rounded-[12px] flex items-end">
           <div className="p-5 space-y-2">
             <button className="outline-none border-none py-[3.4px] px-[16px] bg-[#E02D2D] rounded-[4px] text-white font-[700] text-[14px]">
               Excersice
@@ -69,7 +69,7 @@ const Blogs = () => {
             </div>
           </div>
         </div>
-        <div className="w-[30%] h-full flex flex-col gap-y-4">
+        <div className="lg:w-[30%] w-full h-full flex flex-col gap-y-4">
           <div className="w-full h-1/2 bg-gray-800 rounded-[12px] flex items-end">
             <div className="p-3 space-y-2">
               <button className="outline-none border-none py-[3.4px] px-[16px] bg-[#E3670E] rounded-[4px] text-white font-[700] text-[14px]">

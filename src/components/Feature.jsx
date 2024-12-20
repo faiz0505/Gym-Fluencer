@@ -15,8 +15,8 @@ const Feature = () => {
         and more motivating. Join us as we help you <br /> transform your
         fitness journey, one workout at a time.
       </p>
-      <div className="grid grid-cols-3 py-10">
-        <div className="border-r border-[#1D1D20]">
+      <div className="grid  md:grid-cols-3 py-10">
+        <div className="md:border-r border-[#1D1D20]">
           <h3 className="text-white font-[700] text-[50px] text-center">
             422k+
           </h3>
@@ -25,7 +25,7 @@ const Feature = () => {
             month
           </p>
         </div>
-        <div className="border-r border-[#1D1D20]">
+        <div className="md:border-r border-[#1D1D20]">
           <h3 className="text-white font-[700] text-[50px] text-center">
             122k+
           </h3>
@@ -45,7 +45,7 @@ const Feature = () => {
         <img
           src="../src/assets/feature.png"
           alt="feature image"
-          className="rounded-[16px] w-[760px] max-w-[820px] mx-auto"
+          className="rounded-[16px] w-[95%] md:w-[760px] max-w-[820px] mx-auto"
         />
       </figure>
     </section>

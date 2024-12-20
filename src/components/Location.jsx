@@ -40,7 +40,7 @@ const Location = () => {
         Easily discover gyms near your location to kickstart <br />
         your fitness journey today!
       </p>
-      <div className="grid grid-cols-2 rounded-[16px] mt-10 h-screen overflow-y-scroll scrollbar-hide">
+      <div className="grid md:grid-cols-2 rounded-[16px] mt-10 h-screen overflow-y-scroll scrollbar-hide">
         <div className="bg-[#121212] space-y-5 pt-5 px-5">
           {gyms.map((gym) => {
             return (

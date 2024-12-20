@@ -47,7 +47,7 @@ const Benifits = () => {
         Unlock your full potential with GymFluencer your personal fitness <br />
         partner for progress and motivation
       </p>
-      <div className="grid grid-cols-3 mt-8 px-3 sm:px-6 md:px-12 lg:px-16">
+      <div className="grid md:grid-cols-3 gap-y-5 mt-8 px-3 sm:px-6 md:px-12 lg:px-16">
         <div>
           <div className="bg-[#09090A] p-[30px] space-y-6 rounded-[20px] border border-gray-900">
             <div className="h-[58px] w-[58px] rounded-[14px] p-[14px] bg-[#1A1A1A]">

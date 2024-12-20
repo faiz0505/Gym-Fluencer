@@ -44,23 +44,23 @@ const Feedback = () => {
     },
   ];
   return (
-    <section className="h-screen w-full relative flex flex-col justify-center items-center gap-y-10">
+    <section className="md:h-screen w-full relative flex flex-col justify-center items-center gap-y-10">
       <img
         src="../src/assets/bg-feedback.png"
         alt="background image for feedback section"
-        className="absolute inset-0 opacity-60 top-1/2 -translate-y-1/2"
+        className="absolute inset-0 opacity-60 top-1/2 -translate-y-1/2 hidden md:block"
       />
 
       <h2 className="font-[900] text-white text-center text-[36px] leading-[1.05] relative">
         What people say
       </h2>
-      <div className="relative flex overflow-x-hidden w-full ">
+      <div className="relative flex overflow-x-hidden w-full mb-10 md:mb-0">
         <div className="animate-marque grid grid-flow-col gap-5">
           {feedbacks.map((feedback) => {
             return (
               <div
                 key={feedback.id}
-                className="w-[668px] h-[260px] bg-[#121212] rounded-[16px] overflow-hidden flex cursor-pointer"
+                className="w-[400px] h-[150px] md:w-[668px] md:h-[260px] bg-[#121212] rounded-[16px] overflow-hidden flex cursor-pointer"
               >
                 <figure className="w-[35%] h-full relative">
                   <img
@@ -70,7 +70,7 @@ const Feedback = () => {
                     loading="lazy"
                   />
                 </figure>
-                <div className="w-[65%] p-5">
+                <div className="w-[65%] md:p-5 p-2">
                   <div className="flex items-center gap-4">
                     {Array.from({ length: feedback.stars }).map((_, i) => {
                       return (
@@ -90,10 +90,10 @@ const Feedback = () => {
                       );
                     })}
                   </div>
-                  <h3 className="text-white font-bold text-xl mt-5">
+                  <h3 className="text-white font-bold text-xl mt-3 md:mt-5">
                     {feedback.name}
                   </h3>
-                  <p className="text-gray-400 text-sm mt-3">
+                  <p className="text-gray-400 text-sm mt-1 md:mt-3">
                     {feedback.comment}
                   </p>
                 </div>

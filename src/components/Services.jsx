@@ -17,7 +17,7 @@ const Services = () => {
         GymFluencer offers 5 essential services to help you <br />
         achieve your fitness goals with ease and flexibility.
       </p>
-      <div className="grid grid-cols-5 mt-16">
+      <div className="grid grid-cols-3 place-items-center md:grid-cols-5 mt-16">
         {services.map((service) => {
           return (
             <figure key={service.title}>
