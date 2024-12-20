@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="w-full mt-20">
       <div className="flex flex-col items-center gap-y-8 py-16">
         <img src="../src/assets/logo.svg" alt="logo" className="" />
-        <h2 className="font-[600] text-[#BDBDBD] text-center text-[20px] leading-[1.05] ">
+        <h2 className="font-[600] text-[#BDBDBD] text-center text-[16px] md:text-[20px] leading-[1.05] ">
           Where Fitness Meets Social <br /> Connection!
         </h2>
         <div className="bg-[#1A1A1A] py-[16px] px-[20px] rounded-[12px] text-white font-[500] text-[17px] flex items-start gap-2">
@@ -54,7 +54,7 @@ const Footer = () => {
           </svg>
           faizali786313@gmail.com
         </div>
-        <ul className="flex items-center gap-5 text-[#BDBDBD] mt-8">
+        <ul className="flex flex-wrap justify-center items-center gap-5 text-[#BDBDBD] mt-8 px-3">
           <li className="font-[500] text-[18px]">Home</li>
           <div className="h-[4px] w-[4px] rounded-full bg-[#28282C]"></div>
           <li className="font-[500] text-[18px]">Diet Plan</li>
@@ -66,7 +66,7 @@ const Footer = () => {
         </ul>
       </div>
       <hr className="border-[#1D1D20]" />
-      <div className="px-3 sm:px-6 md:px-12 lg:px-16 flex justify-between items-center py-10">
+      <div className="px-3 sm:px-6 md:px-12 lg:px-16 flex flex-col sm:flex-row gap-y-4 justify-between items-center py-10">
         <div className="text-[#BDBDBD] font-[500] text-[17px]">
           © 2024 GymFluencer. All rights reserved.
         </div>

@@ -9,12 +9,13 @@ const Services = () => {
     { title: "Servive 5", src: "../src/assets/service.png" },
   ];
   return (
-    <section className="w-full min-h-screen py-10">
+    <section className="w-full min-h-screen py-10 px-3 md:px-0">
       <h2 className="font-[900] text-[#EB0000] text-center text-[36px] leading-[1.05] ">
         Our services
       </h2>
-      <p className="font-[400] text-[20px] text-[#EFEFEF] text-center mt-4">
-        GymFluencer offers 5 essential services to help you <br />
+      <p className="font-[400] text-[16px] md:text-[20px] text-[#EFEFEF] text-center mt-4">
+        GymFluencer offers 5 essential services to help you{" "}
+        <br className="hidden md:block" />
         achieve your fitness goals with ease and flexibility.
       </p>
       <div className="grid grid-cols-3 place-items-center md:grid-cols-5 mt-16">

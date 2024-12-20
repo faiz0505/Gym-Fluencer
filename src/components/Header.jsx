@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="h-screen w-full bg-black flex justify-center items-center flex-col space-y-5 shadow-2xl">
+    <header className="h-screen w-full bg-black flex justify-center items-center flex-col space-y-5 shadow-2xl px-3">
       <img
         src="../src/assets/bg-hero.svg"
         alt="background image"
@@ -16,14 +16,14 @@ const Header = () => {
         </div>
         <p className="text-white font-[500]">Trusted by 3+ million users</p>
       </div>
-      <h1 className="font-extrabold text-[#EB0000] text-center text-[85px] leading-[1.05] relative">
+      <h1 className="font-extrabold text-[#EB0000] text-center text-4xl md:text-[85px] leading-[1.05] relative">
         Track Your Fitness <br />
         Journey
       </h1>
-      <p className="relative font-[500] text-[18px] text-[#DCDCDC]">
+      <p className="relative text-center font-[500] text-[14px] md:text-[18px] text-[#DCDCDC]">
         Discover the ultimate fitness companion with GymFluencer. Effortlessly
-        log your workouts, <br /> count reps, and track calories burned. Stay
-        motivated and achieve your goals with ease.
+        log your workouts, <br className="hidden md:block" /> count reps, and
+        track calories burned. Stay motivated and achieve your goals with ease.
       </p>
     </header>
   );

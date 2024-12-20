@@ -40,11 +40,12 @@ const Benifits = () => {
         </svg>
         <span className="font-[500] text-[16px] text-white">Our Benefits</span>
       </div>
-      <h2 className="font-[700] text-[#EB0000] text-center text-[50px] mt-3">
+      <h2 className="font-[700] text-[#EB0000] text-center text-[30px] md:text-[50px] mt-3">
         Discover GymFluencer Benefits
       </h2>
-      <p className="font-[500] text-[16px] text-[#EFEFEF] text-center mt-4">
-        Unlock your full potential with GymFluencer your personal fitness <br />
+      <p className="font-[500] text-[14px] md:text-[16px] text-[#EFEFEF] text-center mt-4">
+        Unlock your full potential with GymFluencer your personal fitness{" "}
+        <br className="hidden md:block" />
         partner for progress and motivation
       </p>
       <div className="grid md:grid-cols-3 gap-y-5 mt-8 px-3 sm:px-6 md:px-12 lg:px-16">
@@ -161,7 +162,11 @@ const Benifits = () => {
           </div>
         </div>
         <figure>
-          <img src="../src/assets/service-mobile.png" alt="mobile image" className=""/>
+          <img
+            src="../src/assets/service-mobile.png"
+            alt="mobile image"
+            className=""
+          />
         </figure>
         <div>
           <div className="bg-[#09090A] p-[30px] space-y-6 rounded-[20px] border border-gray-900">

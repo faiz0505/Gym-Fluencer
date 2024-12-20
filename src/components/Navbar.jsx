@@ -26,7 +26,7 @@ const Navbar = () => {
         <img src="../src/assets/logo.svg" alt="logo" />
         <button
           onClick={() => toggleMenu()}
-          className="outline-none border-none bg-[#EB0000] py-[14px] px-[28px] rounded-[53px] text-white font-[500] md:hidden"
+          className="outline-none border-none bg-[#EB0000] rounded-[53px] text-white font-[500] md:hidden h-12 w-12 rotate-90 text-2xl"
         >
           |||
         </button>

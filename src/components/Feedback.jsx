@@ -105,8 +105,8 @@ const Feedback = () => {
           {feedbacks.map((feedback) => {
             return (
               <div
-                key={feedback.id}
-                className="w-[668px] h-[260px] bg-[#121212] rounded-[16px] overflow-hidden flex"
+                key={`duplicate${feedback.id}`}
+                className="w-[400px] h-[150px] md:w-[668px] md:h-[260px] bg-[#121212] rounded-[16px] overflow-hidden flex cursor-pointer"
               >
                 <figure className="w-[35%] h-full relative">
                   <img
@@ -116,9 +116,9 @@ const Feedback = () => {
                     loading="lazy"
                   />
                 </figure>
-                <div className="w-[65%] p-5">
+                <div className="w-[65%] md:p-5 p-2">
                   <div className="flex items-center gap-4">
-                    {Array.from({ length: feedbacks.length }).map((_, i) => {
+                    {Array.from({ length: feedback.stars }).map((_, i) => {
                       return (
                         <svg
                           key={`2nf${i}`}
@@ -135,13 +135,13 @@ const Feedback = () => {
                         </svg>
                       );
                     })}
-                    <h3 className="text-white font-bold text-xl mt-5">
-                      {feedback.name}
-                    </h3>
-                    <p className="text-gray-400 text-sm mt-3">
-                      {feedback.comment}
-                    </p>
                   </div>
+                  <h3 className="text-white font-bold text-xl mt-3 md:mt-5">
+                    {feedback.name}
+                  </h3>
+                  <p className="text-gray-400 text-sm mt-1 md:mt-3">
+                    {feedback.comment}
+                  </p>
                 </div>
               </div>
             );

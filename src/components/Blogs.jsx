@@ -3,7 +3,7 @@ import React from "react";
 const Blogs = () => {
   return (
     <section className="h-screen w-full px-3 sm:px-6 md:px-12 lg:px-16 py-10">
-      <h2 className="font-[900] text-[#EB0000] text-center text-[40px] leading-[1.05] ">
+      <h2 className="font-[900] text-[#EB0000] text-center text-[34px] md:text-[40px] leading-[1.05] capitalize">
         our latest blogs
       </h2>
       <div className="flex flex-col lg:flex-row gap-4 h-full w-full mt-8">
@@ -12,7 +12,7 @@ const Blogs = () => {
             <button className="outline-none border-none py-[3.4px] px-[16px] bg-[#E02D2D] rounded-[4px] text-white font-[700] text-[14px]">
               Excersice
             </button>
-            <h1 className="font-[900] text-[24px] text-white uppercase">
+            <h1 className="font-[900] text-[18px] md:text-[24px] text-white uppercase">
               Conquering Consistency: How to Make Exercise a Habit You Love
             </h1>
             <div className="flex gap-5">
@@ -54,7 +54,7 @@ const Blogs = () => {
                   />
                 </svg>
 
-                <span className="text-[#DCDCDC] font-[400] text-[14px]">
+                <span className="text-[#DCDCDC] font-[400] text-xs md:text-[14px]">
                   Jun 28, 2024
                 </span>
               </div>
@@ -62,7 +62,7 @@ const Blogs = () => {
               <div className="flex items-center gap-2">
                 <figure className="h-[24px] w-[24px] rounded-full bg-lime-500"></figure>
 
-                <span className="text-[#DCDCDC] font-[400] text-[14px]">
+                <span className="text-[#DCDCDC] font-[400] text-xs md:text-[14px]">
                   Shaikh Aamir
                 </span>
               </div>
@@ -70,12 +70,12 @@ const Blogs = () => {
           </div>
         </div>
         <div className="lg:w-[30%] w-full h-full flex flex-col gap-y-4">
-          <div className="w-full h-1/2 bg-gray-800 rounded-[12px] flex items-end">
+          <div className="w-full md:h-1/2 h-56 bg-gray-800 rounded-[12px] flex items-end">
             <div className="p-3 space-y-2">
               <button className="outline-none border-none py-[3.4px] px-[16px] bg-[#E3670E] rounded-[4px] text-white font-[700] text-[14px]">
                 Weight loss
               </button>
-              <h1 className="font-[900] text-[14px] text-white uppercase">
+              <h1 className="font-[900] text-[12px] md:text-[14px] text-white uppercase">
                 Weight Loss: A Sustainable Approach for a Healthier You
               </h1>
               <div className="flex gap-5">
@@ -117,7 +117,7 @@ const Blogs = () => {
                     />
                   </svg>
 
-                  <span className="text-[#DCDCDC] font-[400] text-[12px]">
+                  <span className="text-[#DCDCDC] font-[400] text-xs md:text-[14px]">
                     Jun 28, 2024
                   </span>
                 </div>
@@ -125,21 +125,20 @@ const Blogs = () => {
                 <div className="flex items-center gap-2">
                   <figure className="h-[24px] w-[24px] rounded-full bg-lime-500"></figure>
 
-                  <span className="text-[#DCDCDC] font-[400] text-[12px]">
+                  <span className="text-[#DCDCDC] font-[400] text-xs md:text-[14px]">
                     Faiz Ali
                   </span>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-full h-1/2 bg-gray-800 rounded-[12px] flex items-end">
+          <div className="w-full md:h-1/2 h-56 bg-gray-800 rounded-[12px] flex items-end">
             <div className="p-3 space-y-2">
               <button className="outline-none border-none py-[3.4px] px-[16px] bg-[#2A990B] rounded-[4px] text-white font-[700] text-[14px]">
-              Nutrition
+                Nutrition
               </button>
-              <h1 className="font-[900] text-[14px] text-white uppercase">
-              Fuel Your Fitness: A Guide to Nutrition for 
-              Peak Performance
+              <h1 className="font-[900] text-[12px] md:text-[14px] text-white uppercase">
+                Fuel Your Fitness: A Guide to Nutrition for Peak Performance
               </h1>
               <div className="flex gap-5">
                 <div className="flex items-center gap-2">
@@ -180,7 +179,7 @@ const Blogs = () => {
                     />
                   </svg>
 
-                  <span className="text-[#DCDCDC] font-[400] text-[12px]">
+                  <span className="text-[#DCDCDC] font-[400] text-xs md:text-[14px]">
                     Jun 28, 2024
                   </span>
                 </div>
@@ -188,13 +187,13 @@ const Blogs = () => {
                 <div className="flex items-center gap-2">
                   <figure className="h-[24px] w-[24px] rounded-full bg-lime-500"></figure>
 
-                  <span className="text-[#DCDCDC] font-[400] text-[12px]">
+                  <span className="text-[#DCDCDC] font-[400] text-xs md:text-[14px]">
                     Faiz Ali
                   </span>
                 </div>
               </div>
             </div>
-           </div>
+          </div>
         </div>
       </div>
     </section>

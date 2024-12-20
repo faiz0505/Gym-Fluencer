@@ -36,8 +36,9 @@ const Location = () => {
       <h2 className="font-[900] text-[#EB0000] text-center text-[25px] leading-[1.05] ">
         Find Your Nearest Gym
       </h2>
-      <p className="font-[500] text-[16px] text-[#EFEFEF] text-center mt-4">
-        Easily discover gyms near your location to kickstart <br />
+      <p className="font-[500] text-[14px] md:text-[16px] text-[#EFEFEF] text-center mt-4">
+        Easily discover gyms near your location to kickstart{" "}
+        <br className="hidden md:block" />
         your fitness journey today!
       </p>
       <div className="grid md:grid-cols-2 rounded-[16px] mt-10 h-screen overflow-y-scroll scrollbar-hide">
@@ -56,8 +57,8 @@ const Location = () => {
                     loading="lazy"
                   />
                 </figure>
-                <div className="w-[75%] p-5 flex flex-col justify-around">
-                  <h3 className="font-[700] text-white text-[24px]">
+                <div className="w-[75%] md:p-5 p-3 flex flex-col justify-around">
+                  <h3 className="font-[700] text-white text-[20px] md:text-[24px]">
                     {gym.name}
                   </h3>
                   <div className="space-y-2">
@@ -86,7 +87,7 @@ const Location = () => {
                           </clipPath>
                         </defs>
                       </svg>
-                      <span className="font-[400] text-[14px]">
+                      <span className="font-[400] text-[12px] md:text-[14px]">
                         {gym.contactNumber}
                       </span>
                     </div>
@@ -116,8 +117,8 @@ const Location = () => {
                         </defs>
                       </svg>
 
-                      <span className="font-[400] text-[14px]">
-                        {gym.contactNumber}
+                      <span className="font-[400] text-xs md:text-[14px]">
+                        {gym.address}
                       </span>
                     </div>
                   </div>
