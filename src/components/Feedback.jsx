@@ -8,7 +8,7 @@ const Feedback = () => {
       name: "Faiz Ali",
       comment:
         "lorem ipsum dolor sit amet, consectetur adip incididunt ut labore et dolore magna",
-      image: "../src/assets/bg-feedback.png",
+      image: "/assets/bg-feedback.png",
       stars: 5,
     },
     {
@@ -16,7 +16,7 @@ const Feedback = () => {
       name: "John Smith",
       comment:
         "lorem ipsum dolor sit amet, consectetur adip dolor sit amet, consectetur adip dolor sit amet et dolore magna et dolore magna et dolore magna et dolore",
-      image: "../src/assets/bg-feedback.png",
+      image: "/assets/bg-feedback.png",
       stars: 3,
     },
     {
@@ -24,14 +24,14 @@ const Feedback = () => {
       name: "Shaikh Aamir",
       comment:
         "lorem ipsum dolor sit amet, consectetur adip dolor sit amet, consectetur adip dolor",
-      image: "../src/assets/bg-feedback.png",
+      image: "/assets/bg-feedback.png",
       stars: 5,
     },
     {
       id: "4f4",
       name: "Sufiyan Ali",
       comment: "lorem Ipsum dolor",
-      image: "../src/assets/bg-feedback.png",
+      image: "/assets/bg-feedback.png",
       stars: 2,
     },
     {
@@ -39,14 +39,14 @@ const Feedback = () => {
       name: "Avinash Kale",
       comment:
         "lorem Ipsum dolor sit amet, consectetur adip dolor sit amet, con Cum sociis natoque penatibus et justo euism maximus et justo. Cum sociis natoque penatibus et just o euism maximus et justo euism maximus et justo",
-      image: "../src/assets/bg-feedback.png",
+      image: "/assets/bg-feedback.png",
       stars: 4,
     },
   ];
   return (
     <section className="md:h-screen w-full relative flex flex-col justify-center items-center gap-y-10">
       <img
-        src="../src/assets/bg-feedback.png"
+        src="/assets/bg-feedback.png"
         alt="background image for feedback section"
         className="absolute inset-0 opacity-60 top-1/2 -translate-y-1/2 hidden md:block"
       />

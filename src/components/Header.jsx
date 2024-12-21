@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="h-screen w-full bg-black flex justify-center items-center flex-col space-y-5 shadow-2xl px-3">
       <img
-        src="../src/assets/bg-hero.svg"
+        src="/assets/bg-hero.svg"
         alt="background image"
         className="h-full w-full object-cover inset-0 opacity-45 absolute"
       />

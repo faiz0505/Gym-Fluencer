@@ -163,7 +163,7 @@ const Benifits = () => {
         </div>
         <figure>
           <img
-            src="../src/assets/service-mobile.png"
+            src="/assets/service-mobile.png"
             alt="mobile image"
             className=""
           />

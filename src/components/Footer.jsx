@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="w-full mt-20">
       <div className="flex flex-col items-center gap-y-8 py-16">
-        <img src="../src/assets/logo.svg" alt="logo" className="" />
+        <img src="/assets/logo.svg" alt="logo" className="" />
         <h2 className="font-[600] text-[#BDBDBD] text-center text-[16px] md:text-[20px] leading-[1.05] ">
           Where Fitness Meets Social <br /> Connection!
         </h2>

@@ -51,7 +51,7 @@ const Location = () => {
               >
                 <figure className="w-[30%] h-full relative">
                   <img
-                    src={`../src/assets/${gym.image}`}
+                    src={`/assets/${gym.image}`}
                     alt={gym.name}
                     className="h-full w-full object-cover object-center hover:scale-110 transition-all duration-500 ease-linear"
                     loading="lazy"

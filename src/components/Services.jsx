@@ -2,11 +2,11 @@ import React from "react";
 
 const Services = () => {
   const services = [
-    { title: "Servive 1", src: "../src/assets/service.png" },
-    { title: "Servive 2", src: "../src/assets/service.png" },
-    { title: "Servive 3", src: "../src/assets/service.png" },
-    { title: "Servive 4", src: "../src/assets/service.png" },
-    { title: "Servive 5", src: "../src/assets/service.png" },
+    { title: "Servive 1", src: "/assets/service.png" },
+    { title: "Servive 2", src: "/assets/service.png" },
+    { title: "Servive 3", src: "/assets/service.png" },
+    { title: "Servive 4", src: "/assets/service.png" },
+    { title: "Servive 5", src: "/assets/service.png" },
   ];
   return (
     <section className="w-full min-h-screen py-10 px-3 md:px-0">

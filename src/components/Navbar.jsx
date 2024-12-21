@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav className="flex flex-col md:flex-row items-center justify-between gap-y-6 gap-3 w-[95%] lg:w-[1100px] bg-[#0F0F0FA6] absolute left-1/2 -translate-x-1/2 top-5 rounded-[50px] p-3 z-50 backdrop-blur-lg">
       <div className="flex md:flex-none md:w-auto justify-between w-full">
-        <img src="../src/assets/logo.svg" alt="logo" />
+        <img src="/assets/logo.svg" alt="logo" />
         <button
           onClick={() => toggleMenu()}
           className="outline-none border-none bg-[#EB0000] rounded-[53px] text-white font-[500] md:hidden h-12 w-12 rotate-90 text-2xl"

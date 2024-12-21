@@ -44,7 +44,7 @@ const Feature = () => {
       </div>
       <figure className="">
         <img
-          src="../src/assets/feature.png"
+          src="/assets/feature.png"
           alt="feature image"
           className="rounded-[16px] w-[95%] md:w-[760px] max-w-[820px] mx-auto"
         />
