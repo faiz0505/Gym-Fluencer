@@ -1,22 +1,14 @@
 import "./App.css";
-import Header from "./components/Header";
-import Feature from "./components/Feature";
-import Services from "./components/Services";
-import Benifits from "./components/Benifits";
-import Feedback from "./components/Feedback";
-import Location from "./components/Location";
-import Blogs from "./components/Blogs";
+import Navbar from "./components/Navbar";
+import { Outlet } from "react-router-dom";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <>
-      <Header />
-      <Feature />
-      <Services />
-      <Benifits />
-      <Feedback />
-      <Location />
-      <Blogs />
-    </>
+    <main>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </main>
   );
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const Benifits = () => {
   return (
-    <section className="min-h-screen w-full py-8">
+    <section className="min-h-screen w-full py-8" id="benifits">
       <div className="bg-[#131315] px-[12px] py-[10px] rounded-[100px] flex items-center gap-2 w-fit mx-auto">
         <svg
           width="21"

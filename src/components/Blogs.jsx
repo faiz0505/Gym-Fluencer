@@ -2,7 +2,10 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <section className="h-screen w-full px-3 sm:px-6 md:px-12 lg:px-16 py-10">
+    <section
+      className="h-screen w-full px-3 sm:px-6 md:px-12 lg:px-16 py-10"
+      id="blogs"
+    >
       <h2 className="font-[900] text-[#EB0000] text-center text-[34px] md:text-[40px] leading-[1.05] capitalize">
         our latest blogs
       </h2>

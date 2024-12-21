@@ -62,7 +62,6 @@ const Footer = () => {
           <li className="font-[500] text-[18px]">Features</li>
           <div className="h-[4px] w-[4px] rounded-full bg-[#28282C]"></div>
           <li className="font-[500] text-[18px]">FAQ&apos;s</li>
-          <div className="h-[4px] w-[4px] rounded-full bg-[#28282C]"></div>
         </ul>
       </div>
       <hr className="border-[#1D1D20]" />

@@ -1,21 +1,23 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [
     { title: "Home", href: "/" },
-    { title: "About", href: "/about" },
+    { title: "About", href: "/aboutus" },
     {
       title: "Our Services",
       subLinks: [
-        { title: "Our Services", href: "/" },
-        { title: "href 1", href: "/" },
-        { title: "href 2", href: "/" },
-        { title: "href 3", href: "/" },
+        { title: "Our Services", href: "#ourservices" },
+        { title: "Service 1", href: "#service1" },
+        { title: "Service 2", href: "#service2" },
+        { title: "Service 3", href: "#service3" },
+        { title: "Service 4", href: "#service4" },
       ],
     },
-    { title: "Benifits", href: "/benifits" },
-    { title: "Blogs", href: "/blogs" },
-    { title: "Contact", href: "/contact" },
+    { title: "Benifits", href: "#benifits" },
+    { title: "Blogs", href: "#blogs" },
+    { title: "Contact", href: "/contactus" },
   ];
   const toggleMenu = () => {
     setIsMenuOpen((pre) => !pre);
@@ -38,19 +40,29 @@ const Navbar = () => {
       >
         {navLinks.map((link) => {
           return !link.subLinks ? (
-            <li key={link.href}>{link.title}</li>
+            <li key={link.href}>
+              {link.href.includes("#") ? (
+                <a href={link.href}>{link.title}</a>
+              ) : (
+                <Link to={link.href}>{link.title}</Link>
+              )}
+            </li>
           ) : (
             <select
               key={link.title}
               name=""
               id=""
               defaultValue={"Our Services"}
-              className="outline-none bg-transparent"
+              className="outline-none bg-transparent border-none"
             >
               {link.subLinks.map((subLink, i) => {
                 return (
-                  <option key={subLink.title} className="">
-                    {subLink.title}
+                  <option
+                    key={subLink.title}
+                    className="bg-[#0F0F0FA6] backdrop-blur-sm px-3"
+                    value={subLink.title}
+                  >
+                    <a href={subLink.href}>{subLink.title}</a>
                   </option>
                 );
               })}
